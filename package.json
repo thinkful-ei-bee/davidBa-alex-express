@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js",
-    "dev": "nodemon app"
+    "dev": "nodemon app",
+    "startPlay":"node playstore.js",
+    "devPlay":"nodemon playstore"
   },
   "repository": {
     "type": "git",
