@@ -6,7 +6,9 @@ const app = express();
 app.get('/apps',(req,res)=>{
     const{sort,genres}=req.query;
 
-    if(genres!==null && ! (genres==='Action'||genres==='Puzzle'||genres==='Strategy'||
+    console.log(genres);
+
+    if(genres!==undefined && ! (genres==='Action'||genres==='Puzzle'||genres==='Strategy'||
     genres==='Casual'||genres==='Arcade'||genres==='Card')){
         res.status(400).send("Please input a valid genre");
     }
@@ -37,3 +39,5 @@ app.get('/apps',(req,res)=>{
 app.listen(8000, () => {
     console.log('This is the server we want to use');
 });
+
+module.exports = app;

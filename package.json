@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha",
     "start": "node app.js",
     "dev": "nodemon app",
-    "startPlay":"node playstore.js",
-    "devPlay":"nodemon playstore"
+    "startPlay": "node playstore.js",
+    "devPlay": "nodemon playstore"
   },
   "repository": {
     "type": "git",
@@ -25,6 +25,9 @@
     "express": "^4.16.4"
   },
   "devDependencies": {
-    "nodemon": "^1.18.10"
+    "chai": "^4.2.0",
+    "mocha": "^6.0.2",
+    "nodemon": "^1.18.10",
+    "supertest": "^4.0.2"
   }
 }
